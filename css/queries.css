@@ -1,0 +1,232 @@
+/*  media query for mobile */
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    header{
+        padding: 1% 5%;
+    }
+  header .nav-bar {
+    display: block;
+  }
+
+  .nav-bar ul{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -10000px;
+    width: 100%;
+    height: 100vh;
+    background-color: blue;
+    text-align: center;
+  }
+
+  .nav-bar ul a{
+    display: block;
+    margin-left: 0;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+  }
+
+    .nav-bar ul li:nth-of-type(5),.nav-bar ul li:nth-of-type(6){
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    .open-menu{
+
+    }
+
+    .open-menu:hover + .nav-bar ul {
+        left: 0px
+    }
+
+  .hero-details {
+    flex-direction: column;
+  }
+
+  .hero-text,
+  .hero-image {
+    flex: 1;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-image img {
+    width: 100%;
+  }
+
+ main .container{
+    padding: 1% 5%;
+ }
+
+  .currency-stats {
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    padding: 0 2.5%;
+  }
+
+  .currency {
+    margin: 1.5rem auto;
+  }
+
+  .reason-details {
+    flex-direction: column;
+    padding: 0 0;
+    padding-bottom: 25rem;
+  }
+
+  .reason-text {
+    padding-top: 0;
+  }
+
+  .earnings{
+    padding: 1% 5%;
+  }
+
+  .Hashrate-details {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  input{
+    width: 100%;
+  }
+
+  .select{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .Hashrate-description{
+        flex-direction: column;
+        text-align: left;
+        justify-content: initial;
+    }
+
+    .Calculate-btn{
+        width: 100%;
+        margin-left: 0;
+        text-align: left;
+    }
+
+  .trade-options {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .secure-trade{
+    padding: 1% 5%;
+  }
+
+  .currency-info {
+    margin-bottom: 2.5rem;
+  }
+
+  .currency-info:nth-of-type(3) {
+    margin-bottom: 0;
+  }
+
+  .investment-description {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .investment-details,
+  .feature-image1 {
+    /* width: 100%; */
+    margin: 0.8rem 0;
+    flex: 1;
+  }
+
+  .investment-details {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .bitcoin-feature {
+    padding-top: 1.2rem;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .statistics-description {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  .statistics-header {
+    padding-left: 0;
+  }
+
+  .statistics-details,
+  .feature-image2 {
+    padding-left: 0;
+    margin: 0.8rem 0;
+  }
+
+  .statistics-details {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .statistics-btn {
+    margin-left: 0;
+  }
+  .profit-tracking {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+  .investment-profit {
+    padding-left: 0;
+  }
+
+  .profit-details,
+  .feature-image3 {
+    padding-left: 0;
+    flex: 1;
+  }
+
+  .profit-details {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .investment-btn {
+    margin-left: 0;
+  }
+
+  .bitcoin-feature {
+    padding-left: 0;
+    padding-top: 1.5rem;
+  }
+
+  .newsletter-background{
+    padding: 1% 5%;
+  }
+
+  .newsletter-info{
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .form{
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+  }
+
+  .mining-input{
+    width: 100%;
+    margin: 1.2rem 0;
+  }
+
+  .footer{
+    grid-template-columns: 1fr;
+    gap: 0;
+    row-gap: 2rem;
+    text-align: center;
+    padding:1% 5%;
+  }
+
+  .payment-header{
+    font-size: 0.9rem;
+  }
+
+}
