@@ -1,27 +1,70 @@
 /*  media query for mobile */
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     header{
-        padding: 1% 5%;
+        padding: 3% 8%;
     }
-  header .nav-bar {
-    display: block;
-  }
 
-  .nav-bar ul{
+    .hero-details{
+        display: flex;
+        align-items: flex-start;
+        padding: 0 0;
+        justify-content: space-between;
+    }
+
+    .cta-hero{
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+    color: #fff;
+    font-size: 0.6rem;
+    border: 1px;
+    border-radius: 28px;
+    width: auto;
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
+    text-align: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--tw-bg-opacity));
+    }
+    
+    .btn{
+    border: 1px;
+    border-radius: 28px;
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #999;
+    }
+
+  .nav{
     display: block;
     position: fixed;
     top: 0;
-    left: -10000px;
+    right: -5000px;
+    transition: 1.5s ease-in-out;
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    --tw-bg-opacity: 1;
+    background-color: rgb(13 13 43/var(--tw-bg-opacity));
     text-align: center;
+    padding-top: 30%;
+    z-index: 1000;
+  }
+
+  .nav .icon-mobile-nav{
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
   }
 
   .nav-bar ul a{
     display: block;
     margin-left: 0;
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 1.5rem 0;
   }
 
@@ -30,12 +73,22 @@
         margin: 0 1rem;
     }
 
-    .open-menu{
-
+    .register::before{
+        content: "";
+        border-left: 1.5px solid #444444;
+        height: 1.1rem;
+        position: absolute;
+        right: 9rem;
+        top: 0.7rem;
+        align-items: center;
     }
 
-    .open-menu:hover + .nav-bar ul {
-        left: 0px
+    .open-menu{
+        display: block;
+    }
+
+    .open-menu:hover + .nav{
+        right: 0px;
     }
 
   .hero-details {
@@ -53,13 +106,13 @@
   }
 
  main .container{
-    padding: 1% 5%;
+    padding: 1% 8.5%;
  }
 
   .currency-stats {
     flex-direction: column;
     justify-content: center;
-    width: 90%;
+    width: 95%;
     padding: 0 2.5%;
   }
 
@@ -84,35 +137,44 @@
   .Hashrate-details {
     width: 100%;
     padding: 1.5rem;
+    align-items: initial;
   }
+
   input{
     width: 100%;
+    margin: 2.4rem 0; 
   }
 
   .select{
     width: 100%;
     margin-left: 0;
+    margin: 2.4rem 0;
   }
 
   .Hashrate-description{
         flex-direction: column;
         text-align: left;
         justify-content: initial;
+        align-items: initial;
     }
 
     .Calculate-btn{
-        width: 100%;
+        font-size: 1.2rem;
+        width: auto;
         margin-left: 0;
         text-align: left;
+        padding: 0.5rem 1.8rem;
     }
 
   .trade-options {
     flex-direction: column;
     gap: 0;
+    padding-bottom: 3rem;
   }
 
   .secure-trade{
-    padding: 1% 5%;
+    padding: 1% 2.5%;
+    margin-top: -17rem;
   }
 
   .currency-info {
@@ -121,6 +183,10 @@
 
   .currency-info:nth-of-type(3) {
     margin-bottom: 0;
+  }
+
+  .mining-btn{
+    padding: 0.8rem 1rem;
   }
 
   .investment-description {
@@ -169,10 +235,12 @@
   .statistics-btn {
     margin-left: 0;
   }
+
   .profit-tracking {
     flex-direction: column;
-    padding: 1rem 0;
+    padding: 6rem 0;
   }
+
   .investment-profit {
     padding-left: 0;
   }
@@ -185,7 +253,7 @@
 
   .profit-details {
     padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.4rem;
   }
 
   .investment-btn {
@@ -194,7 +262,7 @@
 
   .bitcoin-feature {
     padding-left: 0;
-    padding-top: 1.5rem;
+    padding-top: 3rem;
   }
 
   .newsletter-background{
@@ -222,11 +290,247 @@
     gap: 0;
     row-gap: 2rem;
     text-align: center;
-    padding:1% 5%;
+    padding:1% 4%;
   }
+
+  .image-logos img{
+    margin: 0 1rem;
+    width: 80%;
+    height: auto;
+}
+
+.payment-header{
+    font-size: 0.9rem;
+}
 
   .payment-header{
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
+  .attribution {
+    font-size: 0.8rem;
+    gap: 3rem;
 }
+
+.attribution ul{
+    gap: 0.8rem;
+    font-size: 1.2rem;
+}
+
+}
+
+/* For tablets */
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+    header{
+        padding: 1% 8.5%;
+    }
+    .cta-hero{
+        display: inline-flex;
+        gap: 1rem;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 0;
+        color: #fff;
+        font-size: 0.8rem;
+        border: 1px;
+        border-radius: 28px;
+        width: auto;
+        padding: 0.3rem 1rem 0.3rem 0.3rem;
+        text-align: center;
+        --tw-bg-opacity: 1;
+        background-color: rgb(75 85 99/var(--tw-bg-opacity));
+        }
+        
+        .btn{
+        border: 1px;
+        border-radius: 28px;
+        width: auto;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        font-size: 0.8rem;
+        background-color: #fff;
+        color: #999;
+        }
+
+    .trade-options{
+        padding-bottom: 3rem;
+    }
+
+    footer{
+            padding: 1% 5%;
+        }
+
+        .image-logos{
+            justify-content: center;
+        }
+
+        .image-logos img{
+            margin: 0 1.2rem;
+        }
+
+        .mining-header{
+            text-align: left;
+        }
+
+        .newsletter-info{
+            margin-top: 1.8rem;
+            flex-direction: column;
+            align-items: initial;
+            justify-content: initial;
+        
+        }
+
+        .mining-info{
+            flex: 1;
+        }
+
+        .mining-details{
+            line-height: 1.3;
+        }
+
+        .mining-btn{
+            width: auto;
+        }
+
+        /* .Hashrate-description{
+
+        } */
+}
+
+/* For smaller laptops */
+@media only screen and (min-width:1024px) and (max-width: 1043px){
+    .hero-details{
+        display: flex;
+        align-items: flex-start;
+        padding: 3.5rem 0;
+        justify-content: space-between;
+    }
+
+    .cta-hero{
+    display: inline-flex;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 0;
+    color: #fff;
+    font-size: 0.8rem;
+    border: 1px;
+    border-radius: 28px;
+    width: auto;
+    padding: 0.3rem 1rem 0.3rem 0.3rem;
+    text-align: center;
+    --tw-bg-opacity: 1;
+    background-color: rgb(75 85 99/var(--tw-bg-opacity));
+    }
+    
+    .btn{
+    border: 1px;
+    border-radius: 28px;
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #999;
+    }
+    
+    .Hashrate-details{
+        width: 100%;
+        overflow: initial;
+    }
+
+    .Hashrate-description{
+        gap: 1rem;
+        /* justify-content: space-between; */
+        width: 100%;
+
+    }
+
+    input{
+        width: 16rem;
+    }
+
+    .select{
+        width: 14rem;
+        margin-left: 0;
+    }
+
+    .Calculate-btn{
+        margin-left: 0;
+    }
+
+    .secure-trade{
+        padding: 1% 5%;
+    }
+
+    .trade-options{
+        gap: 1.5rem;
+        justify-content: space-between;
+        padding-bottom: 3rem;
+    }
+
+    .statistics-details .smart-investment{
+        margin-left: 0;
+    }
+
+    .bitcoin-feature{
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .investment-profit{
+        padding-left: 0;
+    }
+
+    .profit-details{
+        padding-left: 0;
+    }
+
+    .mining-btn{
+        width: 90%;
+    }
+
+    .newsletter-info{
+        padding: 3rem;
+        margin-top: 3.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .form{
+        flex: 0 0 50%;
+        margin-top: -3rem;
+        padding-top: 0;
+        align-items: flex-start;
+    }
+
+    .mining-info{
+        flex: 0 0 40%;
+    }
+
+    .mining-details{
+        font-size: 0.6rem;
+    }
+
+    .subscribe-btn{
+        margin-left: 4rem;
+    }
+
+    .footer{
+        gap: 6rem;
+    }
+
+    .image-logos{
+        gap: 0.5rem;
+    }
+
+    .image-logos img{
+        margin: 0 1rem;
+        width: 90%;
+        height: auto;
+    }
+
+    .payment-header{
+        font-size: 0.9rem;
+    }
+}
+

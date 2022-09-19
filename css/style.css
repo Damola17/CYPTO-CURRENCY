@@ -45,8 +45,12 @@ header .nav-bar{
     margin-right: auto;
 }
 
-.nav-bar ul{
+.nav{
     display: flex;
+}
+
+.icon-mobile-nav{
+    display: none;
 }
 
 .nav-bar ul a{
@@ -55,6 +59,60 @@ header .nav-bar{
     margin-left: 2.4rem;
     font-size: 1rem;
 }
+
+    .cta-hero{
+    display: inline-flex;
+    gap: 3rem;
+    align-items: center;
+     margin-left: 0;
+     margin-top: 0;
+     color: #fff;
+     font-size: 0.8rem;
+     border: 1px;
+     border-radius: 28px;
+     width: auto;
+     padding: 0.3rem 1.2rem 0.3rem 0.3rem;
+     text-align: center;
+     --tw-bg-opacity: 1;
+     background-color: rgb(75 85 99/var(--tw-bg-opacity));
+    }
+
+.btn{
+    border: 1px;
+    border-radius: 28px;
+    width: auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    background-color: #fff;
+    color: #999;
+}
+
+.Deals-btn{
+    text-align: right;
+}
+
+.register::before{
+    content: "";
+    border-left: 1.5px solid #444444;
+    height: 1.2rem;
+    position: absolute;
+    /* top: 1.2rem; */
+    right: 7.5rem;
+    align-items: center;
+}
+
+.register{
+    font-size: 0.5rem;
+    color: #fff;
+    border: 1px;
+    border-radius: 3.2rem;
+    width: auto;
+    padding: 0.4rem 1.3rem;
+    background-color: #3671E9;
+    position: relative;
+}
+
 
 .icon-mobile-nav{
     color: #fff;
@@ -84,6 +142,7 @@ header .nav-bar{
     width: 90%;
     /* margin-right: 10%; */
 }
+
 
 h1{
     font-size: 3rem;
@@ -278,7 +337,7 @@ h3{
     padding: 3rem;
     margin: 0 auto;
     width: 85%;
-    height: 22rem;
+    height: auto;
     background-color: #fff;
    
 }
@@ -743,10 +802,13 @@ select::placeholder{
     /* font-weight: 100; */
 }
 
-.footer{
-    /* display: flex; */
+footer{
     padding: 1% 8.5%;
     background-color:  #0D0D2B;
+}
+
+.footer{
+    
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 4rem;
@@ -794,3 +856,25 @@ select::placeholder{
     text-decoration: none;
     margin: 0.6rem 0;
 }
+
+.attribution {
+    padding-top: 2.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 1rem;
+}
+
+.attribution ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 1.4rem;
+    font-size: 1.5rem;
+}
+
+
