@@ -108,7 +108,7 @@ header .nav-bar{
     border: 1px;
     border-radius: 3.2rem;
     width: auto;
-    padding: 0.4rem 1.3rem;
+    padding: 0.6rem 1.3rem;
     background-color: #3671E9;
     position: relative;
 }
@@ -469,7 +469,7 @@ select::placeholder{
 
 .trade-options{
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
     /* justify-content: space-between; */
 }
 
@@ -483,6 +483,7 @@ select::placeholder{
 .currency-info{
     border-radius: 1.8rem;
     box-shadow: 0 2rem 22rem rgba(56,23,120,0.08);
+    /* width: auto; */
     padding: 3.5rem 2.5rem;
     /* height: 25rem; */
     flex: 1;

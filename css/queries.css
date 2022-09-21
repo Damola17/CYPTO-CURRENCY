@@ -44,7 +44,7 @@
     position: fixed;
     top: 0;
     right: -5000px;
-    transition: 1.5s ease-in-out;
+    transition: 0.5s ease-in;
     width: 100%;
     height: 100vh;
     --tw-bg-opacity: 1;
@@ -189,6 +189,10 @@
     padding: 0.8rem 1rem;
   }
 
+  .mining-icon{
+    margin-left: 0;
+}
+
   .investment-description {
     flex-direction: column;
     justify-content: initial;
@@ -309,7 +313,8 @@
 
   .attribution {
     font-size: 0.8rem;
-    gap: 3rem;
+    gap: 1rem;
+    padding-bottom: 3rem;
 }
 
 .attribution ul{
@@ -534,3 +539,55 @@
     }
 }
 
+/* For large laptops */
+@media only screen and (min-width:1043px) and (max-width: 1200px){
+  .Hashrate-details{
+    width: 100%;
+    overflow: hidden;
+}
+
+.Hashrate-description{
+    gap: 1rem;
+    width: 100%;
+}
+
+input{
+  width: 17rem;
+}
+
+.select{
+  width: 15rem;
+  margin-left: 0;
+}
+
+.Calculate-btn{
+  margin-left: 0;
+}
+
+.currency-info{
+  border-radius: 1.8rem;
+  /* width: auto; */
+  padding: 2.5rem 2.5rem;
+}
+
+.trade-options{
+  gap: 2rem;
+}
+
+.secure-trade{
+  padding: 1% 8.5%;
+  padding-bottom: 3rem;
+}
+
+.mining-btn{
+  margin-top: 1rem;
+  font-size: 1rem;
+  width: 80%;
+  padding: 0.7rem 1rem;
+}
+
+.mining-icon{
+  margin-left: 0.3rem;
+}
+
+}
